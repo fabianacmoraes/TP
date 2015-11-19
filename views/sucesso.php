@@ -30,7 +30,7 @@
             <a href="links">LINKS ÚTEIS</a>
             <a href="blog">BLOG</a>
             <a href="contato" class="active">CONTATO</a>
-		</nav>
+		</nav> 
 
 	</header>
 

@@ -36,7 +36,7 @@
 
 					<ul class="nav navbar-nav pull-right">
 						<li><a href="logout">Sair</a></li>
-					</ul>
+					</ul> 
 				</div>
 			</nav>
 		</div>

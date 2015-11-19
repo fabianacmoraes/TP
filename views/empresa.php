@@ -21,7 +21,7 @@
     	<div id="logo"><a href="index"><img src="<?php echo base_url();?>static/img/logo1.png" alt="logo Fmmoraes Consultoria e Assessoria"/></a></div>
     
     	<a href="login"><p class="login">ÁREA<br> ADMINISTRATIVA</p></a>
-    	
+    	 
 		<nav>
             <a href="index">HOME</a>
             <a href="empresa" class="active">EMPRESA</a>

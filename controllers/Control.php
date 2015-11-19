@@ -106,4 +106,4 @@ class Control extends CI_Controller {
 		$this->session->unset_userdata("_ID");
 		$this->session->unset_userdata("_NOME");
 	}
-}
+} 

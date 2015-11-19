@@ -23,7 +23,7 @@
         	$(this).addClass("active");
     	});
 	});
-	</script>
+	</script> 
 
 	<link href="<?php echo base_url();?>static/css/estilo.css" rel="stylesheet"/>
 

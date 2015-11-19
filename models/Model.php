@@ -8,7 +8,7 @@ class Model extends CI_Model{
     public function insert2(Blog $adm){
         $this->db->insert('Blog', $adm);
     }
-    
+      
     public function searchAll2(){
         $query=$this->db->query("Select * from Blog");
         return $query->result();

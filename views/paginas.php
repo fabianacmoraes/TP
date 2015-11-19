@@ -31,7 +31,7 @@
 			<div class="container">
 				<div class="row">
 					<h3>Editar notícias já publicadas</h3><br>
-				</div>
+				</div> 
 
 				<div class="row">
 					<div class="table-responsive">
