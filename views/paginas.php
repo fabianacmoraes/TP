@@ -4,9 +4,15 @@
 		<meta charset="UTF-8" />
 		<title>Área Administrativa - Páginas</title>
 
-		 <!-- Bootstrap -->
+		 <!-- Bootstrap -->  
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>static/boots/css/bootstrap.min.css"/>
 		<!--<link href="css/normalize.css" rel="stylesheet">-->
+		
+		<style>
+			.table-responsive .table th{
+				width: 40%;
+			}
+		</style>
 	</head>
 	<body>
 		<!-- nav -->
@@ -32,22 +38,41 @@
 				<div class="row">
 					<h3>Editar notícias já publicadas</h3><br>
 				</div> 
+				
+			
 
-				<div class="row">
-					<div class="table-responsive">
-					  <table class="table">
-					  	<th>Título</th>
-					  	<th>Data</th>
-					  	<th>Ações</th>
-						   <tr>
-						    <td></td>
-						    <td></td> 
-						    <td></td>
-						  </tr>
-					  </table>
-					</div>
-				</div>
+			<?php
+	            foreach($posts as $u){
+	            	echo 
+	            	"<div class='row'>
+						<div class='table-responsive'>
+					  		<table class='table'>
+						  		<thead>
+						  			<tr>
+									  	<th>Título</th>
+									  	<th>Data</th>
+									  	<th>Ações</th>
+								  	</tr>
+								</thead>
+								<tbody>
+								    <tr>
+									    <td>".$u->titulo."</td>
+									    <td>".$u->data."</td>
+							    		<td><a href=".base_url() . "index.php/control/deletar/" . $u->id.">Excluir</a></td>
+								   </tr>
+							   </tbody>
+					  		</table>
+						</div>
+					</div>";
+	            }
+			?>
 			</div>
+			
+			<div class="container">
+	        	<div class="row">
+	        		<h3><a href="blog">Visualizar blog</a></h3>
+	        	</div>
+            </div>
 		</main>
 
 		<!--

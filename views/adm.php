@@ -40,19 +40,33 @@
 					<h3>Cadastrar nova notícia</h3><br>
 				</div>
 				<div class="row">
-				<form role="form" action="/index.php/control/doPost2" method="POST">
+						<form role="form" action="/index.php/control/doPost2" method="POST">
                   <div class="form-group">
                     <label for="text">Título:</label>
-                    <input type="text" class="form-control" name="titulo">
+                    <input type="text" class="form-control" name="titulo" required>
                   </div>
+                  
+                  <div class="form-group"> 
+                    <label for="text">Data:</label>
+                    <input type="date" class="form-control" name="data" required>
+                  </div>
+                  
                   <div class="form-group">
-                    <label for="date">Data:</label>
-                    <input type="date" class="form-control" name="data">
-                  </div>
+	                    <label for="text">Categoria:</label>
+											<select name="cat" required>
+												<option value=""></option>
+												<option value="Advocacia">Advocacia</option>
+									      <option value="Administracao">Administração</option>
+									      <option value="Contabilidade">Contabilidade</option>
+									      <option value="Imobiliaria">Imobiliária</option>
+							  			</select>
+						  		</div>
+						  		
                   <div class="form-group">
                     <label for="text">Conteúdo:</label>
-                    <textarea class="form-control" name="texto"></textarea>
+                    <textarea class="form-control" name="texto" required></textarea>
                   </div>
+                  
                   <button type="submit" class="btn btn-default">Enviar</button>
             </form>
 				</div>

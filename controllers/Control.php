@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Control extends CI_Controller {
+class Control extends CI_Controller { 
 	
 	public function index(){
 		$this->load->view('index');
@@ -20,12 +20,43 @@ class Control extends CI_Controller {
 	}
 	
 	public function blog(){
-		require_once APPPATH."models/insere-blog.php";
-	    $this->load->model('model');
-	    $m = $this->model;
-	    $posts = $m->searchAll2();
-	    $data['posts']=$posts;
-		$this->load->view('blog',$data);
+	  	$this->load->model('blogDAO');
+	    $m = $this->blogDAO;
+	   	$posts = $m->queryAll();
+	    $data['posts'] = $posts;
+	    $this->load->view('blog',$data);
+	}
+	
+	public function blogAdv(){
+	  	$this->load->model('blogDAO');
+	    $m = $this->blogDAO;
+	   	$posts = $m->queryAdv();
+	    $data['posts'] = $posts;
+	    $this->load->view('blog',$data);
+	}
+	
+	public function blogAdm(){
+	  	$this->load->model('blogDAO');
+	    $m = $this->blogDAO;
+	   	$posts = $m->queryAdm();
+	    $data['posts'] = $posts;
+	    $this->load->view('blog',$data);
+	}
+	
+	public function blogCont(){
+	  	$this->load->model('blogDAO');
+	    $m = $this->blogDAO;
+	   	$posts = $m->queryCont();
+	    $data['posts'] = $posts;
+	    $this->load->view('blog',$data);
+	}
+	
+	public function blogImob(){
+	  	$this->load->model('blogDAO');
+	    $m = $this->blogDAO;
+	   	$posts = $m->queryImob();
+	    $data['posts'] = $posts;
+	    $this->load->view('blog',$data);
 	}
 	
 	public function contato(){
@@ -54,7 +85,12 @@ class Control extends CI_Controller {
 	}
 	
 	public function paginas(){
-		$this->load->view('paginas');
+		require_once APPPATH."models/insere-blog.php";
+	    $this->load->model('model');
+	    $m = $this->model;
+	    $posts = $m->searchAll2();
+	    $data['posts']=$posts;
+		$this->load->view('paginas',$data);
 	}
 	
 	public function doPost(){
@@ -66,11 +102,18 @@ class Control extends CI_Controller {
 	}
 	
 	public function doPost2(){
-		$this->load->view('paginas');
-		require_once APPPATH."models/insere-blog.php";
-		$this->load->model('model');
-		$m = $this->model;
-		$m->insert2(new Blog($_POST["titulo"],$_POST["data"],$_POST["texto"]));
+ 		require_once APPPATH."models/blog.php";
+		$this->load->model('blogDAO');
+		$m = $this->blogDAO;
+		$titulo = $_POST["titulo"];
+		$data = $_POST["data"];
+		$texto = $_POST["texto"];
+		$categoria = $_POST["cat"];
+		$f = new Fabrica();
+		$blog = $f->createBlog($categoria, $titulo, $data, $texto);
+		$blog->tipoid = $blog->getCatId();
+		$m->insert($blog);
+		redirect("/control/paginas");
 	}
 	
 	public function listar(){
@@ -106,4 +149,14 @@ class Control extends CI_Controller {
 		$this->session->unset_userdata("_ID");
 		$this->session->unset_userdata("_NOME");
 	}
+	
+	public function deletar($id){
+		$this->load->model('model');
+		if ($this->model->deletar($id)) {
+			redirect('/control/paginas');
+		} else {
+			log_message('error', 'Erro ao deletar...');
+		}
+	}
+	
 } 

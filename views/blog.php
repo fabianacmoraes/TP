@@ -38,6 +38,16 @@
 		<p id="id">Blog</p>
 		
 		<div class="blog">
+		
+			<div class="categoria">
+				<p class="titulosimples">Categorias</p> 
+				<a href="blogAdv">Advocacia</a> | 
+				<a href="blogAdm">Administração</a> | 
+				<a href="blogCont">Contabilidade</a> | 
+				<a href="blogImob">Imobiliaria</a> | 
+				<a href="blog">Todas</a>
+			</div>
+		
 			<?php
 	            foreach($posts as $u){
 	                echo "<div class='contblog'><h2>".$u->titulo."</h2>"."<span>Data: ".$u->data."</span><br><p>".$u->texto."</p><br></div>";
