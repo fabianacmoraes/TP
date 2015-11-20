@@ -46,7 +46,7 @@
                     <input type="text" class="form-control" name="titulo" required>
                   </div>
                   
-                  <div class="form-group"> 
+                  <div class="form-group">
                     <label for="text">Data:</label>
                     <input type="date" class="form-control" name="data" required>
                   </div>

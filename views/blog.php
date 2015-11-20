@@ -40,7 +40,7 @@
 		<div class="blog">
 		
 			<div class="categoria">
-				<p class="titulosimples">Categorias</p> 
+				<p class="titulosimples">Categorias</p>
 				<a href="blogAdv">Advocacia</a> | 
 				<a href="blogAdm">Administração</a> | 
 				<a href="blogCont">Contabilidade</a> | 

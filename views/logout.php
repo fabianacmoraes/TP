@@ -34,7 +34,7 @@
                 <h1 class="text-center">Até logo</h1>
             </div>
             
-            <div class="row">  
+            <div class="row">
                 <form role="form" action="/index.php/control/auth" method="POST">
                       <div class="form-group">
                         <label for="text">Usuário:</label>

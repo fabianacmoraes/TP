@@ -6,7 +6,7 @@
 	    
 	    public function queryAll(){
 	        $res = $this->db->query("Select * from Blog");
-	        return $res->result(); 
+	        return $res->result();
 	    }
 	    
 	    public function queryAdv(){

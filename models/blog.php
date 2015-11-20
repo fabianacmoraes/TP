@@ -6,7 +6,7 @@
             $this->titulo = $titulo;
             $this->data = $data;
             $this->texto = $texto;
-        } 
+        }
         
         abstract public function getCatId();
     }
