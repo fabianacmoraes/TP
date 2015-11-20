@@ -14,7 +14,7 @@ class Model extends CI_Model{
         return $this->db->delete('Blog');
     }
       
-    public function searchAll2(){
+    public function searchAll2(){  
         $query=$this->db->query("Select * from Blog");
         return $query->result();
     }

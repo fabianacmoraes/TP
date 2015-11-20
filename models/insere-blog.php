@@ -6,6 +6,6 @@ class Blog{
         $this->titulo = $titulo;
         $this->data = $data;
         $this->texto = $texto;
-    }
+    }  
 }
  
