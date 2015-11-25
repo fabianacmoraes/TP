@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<title>Área Administrativa - Páginas</title>
 
-		 <!-- Bootstrap --> 
+		 <!-- Bootstrap -->    
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>static/boots/css/bootstrap.min.css"/>
 		<!--<link href="css/normalize.css" rel="stylesheet">-->
 		
