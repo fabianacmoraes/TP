@@ -25,7 +25,7 @@
     
     class Contabilidade extends Blog{
         public function getCatId(){
-            return 3;
+            return 3;  
         }
     }
     

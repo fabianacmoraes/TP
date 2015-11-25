@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>static/css/estilo.css"/>
     </head>
-      
+        
     <body>
         <p id="id">Testes</p>
         <?php

@@ -9,4 +9,4 @@ class Usuario{
         $this->assunto = $assunto;
         $this->mensagem = $mensagem;
     }
-}  
+}    
