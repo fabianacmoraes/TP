@@ -23,7 +23,7 @@
 
 		</style>
 	</head>
-	<body>    
+	<body> 
 		<!-- nav -->
 		<div class="container-fluid">
 			<nav class="navbar navbar-inverse">

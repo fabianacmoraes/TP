@@ -23,7 +23,7 @@
     </head>
 
     </body>
-    
+
     <main>
         <div class="container">
             <form role="form" action="/index.php/control/auth" method="POST">

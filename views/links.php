@@ -12,7 +12,7 @@
 
 	<link href="<?php echo base_url();?>static/css/estilo.css" rel="stylesheet"/>
 </head>
-    
+ 
 <body>
 
 <div id="container">

@@ -31,7 +31,7 @@
             <a href="blog">BLOG</a>
             <a href="contato" class="active">CONTATO</a>
 		</nav> 
-     
+   
 	</header>
 
 
