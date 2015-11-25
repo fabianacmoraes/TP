@@ -23,9 +23,9 @@
 					<ul class="nav navbar-nav">
 						<li><a href="home" class="active">Home</a></li>
 						<li><a href="adm">Cadastrar notícia</a></li>
-						<li><a href="paginas">Editar notícias</a></li>
+						<li><a href="paginas">Excluir notícias</a></li>
 					</ul>
-
+				
 					<ul class="nav navbar-nav pull-right">
 						<li><a href="logout">Sair</a></li> 
 					</ul>

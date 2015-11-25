@@ -38,7 +38,7 @@
 		<p id="id">Blog</p>
 		
 		<div class="blog">
-		
+			
 			<div class="categoria">
 				<p class="titulosimples">Categorias</p>  
 				<a href="blogAdv">Advocacia</a> | 

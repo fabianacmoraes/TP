@@ -47,7 +47,7 @@
  
 		</div>
 
-		<form action="/index.php/control/doPost" method="post">     
+		<form action="/index.php/control/doPost" method="post">  
 			<p>
 				<label>Nome: *<br> 
 					<input type="text" name="nome" id="nome" size="40"  maxlength="25" autocomplete="on" required placeholder="Digite seu nome">

@@ -8,4 +8,3 @@ class Blog{
         $this->texto = $texto;
     }    
 }
- 

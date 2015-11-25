@@ -15,7 +15,7 @@
         public function getCatId(){
             return 1;
         }
-    }
+
     
     class Administracao extends Blog{
         public function getCatId(){

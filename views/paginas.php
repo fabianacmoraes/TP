@@ -22,7 +22,7 @@
 					<ul class="nav navbar-nav">
 						<li><a href="home" class="active">Home</a></li>
 						<li><a href="adm">Cadastrar notícia</a></li>
-						<li><a href="paginas">Editar notícias</a></li>
+						<li><a href="paginas"> notícias</a></li>
 					</ul>
 
 					<ul class="nav navbar-nav pull-right">
@@ -36,7 +36,7 @@
 		<main>
 			<div class="container">
 				<div class="row">
-					<h3>Editar notícias já publicadas</h3><br>
+					<h3>Excluir notícias já publicadas</h3><br>
 				</div> 
 				
 			
